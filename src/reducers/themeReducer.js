@@ -11,7 +11,7 @@ export function reducer(state, action) {
     case 'updateTheme':
       return {
         ...state,
-        currentTheme: { ...theme[state.currentTheme.id], ...action.value }
+        currentTheme: theme[action.value]
       }
     case 'toggleTheme': {
       const newThemeKey = state.currentTheme.id === 'dark' ? 'light' : 'dark'

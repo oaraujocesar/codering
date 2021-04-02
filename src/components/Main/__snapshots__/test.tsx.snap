@@ -66,8 +66,5 @@ exports[`<Main /> Should render the heading 1`] = `
     class="c4"
     src="/img/hero-illustration.svg"
   />
-  <button>
-    Change Theme
-  </button>
 </main>
 `;

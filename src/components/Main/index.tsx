@@ -1,17 +1,9 @@
-import { useContext } from 'react'
-import { ThemeContext } from '../../context/theme'
 import * as S from './styles'
 
 const Main = ({
   title = 'React Avançado',
   description = 'TypeScript, ReactJs, NextJs e Styled Components'
 }) => {
-  const { dispatch } = useContext(ThemeContext)
-
-  const toggleTheme = () => {
-    dispatch({ type: 'toggleTheme' })
-  }
-
   return (
     <S.Wrapper>
       <S.Logo
@@ -24,7 +16,6 @@ const Main = ({
         src="/img/hero-illustration.svg"
         alt="Desenvolvedor de software de frente para uma tela com códigos"
       />
-      <button onClick={toggleTheme}>Change Theme</button>
     </S.Wrapper>
   )
 }

@@ -8,13 +8,15 @@ const base = {
 const dark = {
   id: 'dark',
   ...base,
-  backgroundColor: '#303030'
+  backgroundColor: '#303030',
+  shadeOne: '#424242'
 }
 
 const light = {
   id: 'light',
   ...base,
-  backgroundColor: '#F4F4F4'
+  backgroundColor: '#F4F4F4',
+  shadeOne: '#E6E6E6'
 }
 
 export const theme = { dark, light }
