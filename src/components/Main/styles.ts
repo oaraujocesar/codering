@@ -12,7 +12,7 @@ export const Wrapper = styled.main`
   padding: 3rem;
 
   color: #ffffff;
-  background-color: #06092b;
+  background-color: ${(props) => props.theme.backgroundColor};
 `
 export const Logo = styled.img`
   width: 25rem;
