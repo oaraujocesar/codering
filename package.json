@@ -29,6 +29,9 @@
       "yarn test --findRelatedTests --bail"
     ]
   },
+  "files": [
+    "src/styles/styled.d.ts"
+  ],
   "dependencies": {
     "next": "10.1.2",
     "next-pwa": "^5.0.6",

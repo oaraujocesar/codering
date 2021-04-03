@@ -19,4 +19,6 @@ const light = {
   shadeOne: '#E6E6E6'
 }
 
+export type MyTheme = typeof dark
+
 export const theme = { dark, light }
