@@ -4,13 +4,13 @@ export const Wrapper = styled.div`
   position: relative;
 `
 
-export const Input = styled.input`
+export const Input = styled.input<{ autocomplete: string }>`
   width: 100%;
   outline: none;
   padding: 9px 28px;
   border-radius: 20px;
-  color: ${(props) => props.theme.textColorGrey};
   border: 1px solid transparent;
+  color: ${(props) => props.theme.textColorGrey};
   background: ${(props) => props.theme.shadeOne};
 `
 

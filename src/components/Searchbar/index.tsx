@@ -22,6 +22,7 @@ const Searchbar = ({ placeholder, value, change }: ISearch) => {
         name="searchbar"
         id="searchbar"
         value={value}
+        autocomplete="off"
         onChange={({ currentTarget }: ChangeEvent<HTMLInputElement>) =>
           change && change(currentTarget.value)
         }
