@@ -12,7 +12,13 @@ const GlobalStyles = createGlobalStyle`
 
   }
 
-  html, body, #__next {
+  html, body {
+    height: 100%;
+  }
+
+  #__next {
+    display: flex;
+    width: 100%;
     height: 100%;
   }
 
@@ -25,6 +31,10 @@ const GlobalStyles = createGlobalStyle`
 
   ul {
     list-style: none;
+  }
+
+  a {
+    text-decoration: none;
   }
 `
 
