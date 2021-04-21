@@ -1,4 +1,4 @@
-import { createGlobalStyle } from 'styled-components'
+import styled, { createGlobalStyle } from 'styled-components'
 
 const GlobalStyles = createGlobalStyle`
   * {
@@ -25,8 +25,7 @@ const GlobalStyles = createGlobalStyle`
   body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
-    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: 'Roboto', sans-serif;
   }
 
   ul {
@@ -44,6 +43,12 @@ const GlobalStyles = createGlobalStyle`
   font-weight: 700;
   font-display: swap;
 }
+`
+
+export const Container = styled.div`
+  width: 100%;
+  margin: 0 auto;
+  max-width: 970px;
 `
 
 export default GlobalStyles

@@ -2,6 +2,8 @@ import styled from 'styled-components'
 
 export const Wrapper = styled.div`
   position: relative;
+  width: 100%;
+  max-width: 763px;
 `
 
 export const Input = styled.input<{ autocomplete: string }>`
@@ -12,6 +14,11 @@ export const Input = styled.input<{ autocomplete: string }>`
   border: 1px solid transparent;
   color: ${(props) => props.theme.textColorGrey};
   background: ${(props) => props.theme.shadeOne};
+  border: 2px solid transparent;
+
+  &:focus {
+    border: 2px solid ${(props) => props.theme.primaryColor};
+  }
 `
 
 export const Button = styled.button`

@@ -3,6 +3,8 @@
 exports[`<Searchbar /> Should render the searchbar 1`] = `
 .c0 {
   position: relative;
+  width: 100%;
+  max-width: 763px;
 }
 
 .c1 {
@@ -11,6 +13,11 @@ exports[`<Searchbar /> Should render the searchbar 1`] = `
   padding: 9px 28px;
   border-radius: 20px;
   border: 1px solid transparent;
+  border: 2px solid transparent;
+}
+
+.c1:focus {
+  border: 2px solid;
 }
 
 .c2 {

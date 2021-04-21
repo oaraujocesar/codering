@@ -12,12 +12,13 @@ export const Wrapper = styled.aside`
 
   svg.logo {
     padding: 0 39.5px;
-    margin-bottom: 50px;
+    margin-bottom: 5rem;
   }
 `
 
 export const LogoLink = styled.a`
   cursor: pointer;
+
   &:hover {
     opacity: 0.8;
   }
