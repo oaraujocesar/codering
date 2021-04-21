@@ -2,6 +2,10 @@ import styled, { css } from 'styled-components'
 
 const complexMixin = css`
   background: ${(props) => props.theme.menuBackground};
+  a {
+    font-weight: 700;
+  }
+
   &::before {
     opacity: 1;
   }
@@ -44,6 +48,7 @@ export const Wrapper = styled.li<{ isActive: boolean }>`
 
     font-size: 2.4rem;
     line-height: 1.7rem;
+    font-family: 'Roboto', sans-serif;
     color: ${(props) => props.theme.menuItem};
 
     img {

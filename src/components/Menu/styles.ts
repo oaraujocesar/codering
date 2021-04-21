@@ -5,7 +5,7 @@ export const Wrapper = styled.aside`
   left: 0;
   z-index: 20;
   height: 100vh;
-  padding: 60px 0;
+  padding: 40px 0;
   position: sticky;
   background: ${(props) => props.theme.menu};
   box-shadow: 4px 4px 25px rgba(0, 0, 0, 0.16);

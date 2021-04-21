@@ -36,6 +36,14 @@ const GlobalStyles = createGlobalStyle`
   a {
     text-decoration: none;
   }
+
+  @font-face {
+  font-family: "FuturaPT";
+  src: url("/fonts/FuturaPT/FuturaPTBold.otf");
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
 `
 
 export default GlobalStyles

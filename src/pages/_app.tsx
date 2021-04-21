@@ -14,7 +14,9 @@ import Menu from 'components/Menu'
 const Wrapper = styled.section`
   width: 100%;
   display: flex;
+  overflow-y: scroll;
   flex-direction: column;
+  background-color: ${(props) => props.theme.backgroundColor};
 `
 
 const App: React.FC<AppProps> = ({ Component, pageProps }) => {
@@ -28,6 +30,17 @@ const App: React.FC<AppProps> = ({ Component, pageProps }) => {
           <title>
             Codering - Sua melhor fonte de informação sobre desenvolvimento
           </title>
+          <link
+            rel="preload"
+            href="/fonts/FuturaPT/FuturaPTBold.otf"
+            as="font"
+            crossOrigin=""
+          />
+          <link rel="preconnect" href="https://fonts.gstatic.com" />
+          <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+            rel="stylesheet"
+          />
           <link rel="shortcut icon" href="/img/icon-512.png" />
           <link rel="apple-touch-icon" href="/img/icon-512.png" />
           <link rel="manifest" href="/manifest.json" />
